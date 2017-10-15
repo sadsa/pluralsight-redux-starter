@@ -25,6 +25,7 @@ const TextInput = ({name, label, onChange, value, placeholder, error}) => {
           type="text"
           name={name}
           className="form-control"
+          value={value}
           placeholder={placeholder}
           onChange={onChange}/>
         {error ? <span className="alert alert-danger">{error}</span> : ''}
